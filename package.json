@@ -1,0 +1,31 @@
+{
+  "name": "accounter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/index.js\""
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/figlet": "^1.5.5",
+    "@types/imap": "^0.8.35",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.14.6",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "qnton-prettier-config": "^1.0.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2",
+    "figlet": "^1.5.2",
+    "imap": "^0.8.19",
+    "inquirer": "^9.1.4",
+    "qnton-tld-extract": "^2.0.0"
+  }
+}
