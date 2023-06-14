@@ -193,7 +193,12 @@ function extractDomains(emailList: string) {
     const address = match[0].split("@").pop();
 
     if (address) {
-      return parse_host(address).domain;
+      try {
+        return parse_host(address).domain;
+      } catch (error) {
+        console.error("Error parsing host:", error);
+        return null;
+      }
     }
   }
 }
