@@ -32,8 +32,9 @@ npm install
 ## Usage
 
 1. Open a terminal and navigate to the project directory
-2. Run `npm start` to start the tool
-3. Follow the prompts to enter the required information:
+2. Run `npm run build` to build the tool
+3. Run `npm run start` to start the tool
+4. Follow the prompts to enter the required information:
 
    - Email username
    - Email password
@@ -42,7 +43,7 @@ npm install
    - Use TLS (default: true)
    - Directories to check
 
-4. Wait for the tool to finish scanning your emails
-5. The tool will output the domain names of the email providers that you registered with in a JSON file named YYYY-MM-DD_output.json (e.g., 2023-03-08_output.json)
+5. Wait for the tool to finish scanning your emails
+6. The tool will output the domain names of the email providers that you registered with in a JSON file named YYYY-MM-DD_output.json (e.g., 2023-03-08_output.json)
 
 **Note:** The tool only scans the directories that you specify during the setup.
